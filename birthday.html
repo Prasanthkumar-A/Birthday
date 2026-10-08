@@ -1,0 +1,3621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>For The Girl Who Owns My Heart ❤️</title>
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+    background:
+    radial-gradient(circle at top,#25104f,#090312 60%,#020107);
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+/* =========================================================
+   LOADING SCREEN
+========================================================= */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050208;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    z-index:99999;
+
+    transition:1s;
+
+}
+
+.loader-heart{
+
+    font-size:70px;
+
+    animation:
+    heartbeat 1.2s infinite;
+
+}
+
+.loader-text{
+
+    margin-top:20px;
+
+    color:#ffb6dc;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.3);
+    }
+
+}
+
+
+/* =========================================================
+   PARTICLES
+========================================================= */
+
+#particles{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+.particle{
+
+    position:absolute;
+
+    width:3px;
+
+    height:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    opacity:.7;
+
+    animation:
+    floatParticle linear infinite;
+
+}
+
+@keyframes floatParticle{
+
+    from{
+
+        transform:
+        translateY(110vh)
+        translateX(0);
+
+    }
+
+    to{
+
+        transform:
+        translateY(-10vh)
+        translateX(80px);
+
+    }
+
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-30px;
+
+    font-size:20px;
+
+    pointer-events:none;
+
+    z-index:2;
+
+    animation:
+    floatHeart 8s linear forwards;
+
+    opacity:.8;
+
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:
+        translateY(0)
+        scale(.5)
+        rotate(0);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:
+        translateY(-110vh)
+        scale(1.5)
+        rotate(25deg);
+        opacity:0;
+    }
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+section{
+
+    min-height:100vh;
+
+    position:relative;
+
+    z-index:3;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:70px 20px;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.small-title{
+
+    color:#ff9bd5;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+    margin-bottom:15px;
+
+}
+
+h1{
+
+    font-size:
+    clamp(45px,8vw,100px);
+
+    line-height:1;
+
+}
+
+h2{
+
+    font-size:
+    clamp(35px,6vw,65px);
+
+    margin-bottom:25px;
+
+}
+
+p{
+
+    line-height:1.8;
+
+    color:#e9dce8;
+
+}
+
+
+/* =========================================================
+   GLOW TEXT
+========================================================= */
+
+.glow{
+
+    color:#fff;
+
+    text-shadow:
+
+    0 0 10px #ff4da6,
+
+    0 0 25px #ff4da6,
+
+    0 0 50px #ff4da6;
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn{
+
+    border:none;
+
+    padding:16px 32px;
+
+    border-radius:50px;
+
+    margin-top:30px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:
+    linear-gradient(135deg,#ff3f9f,#8b3dff);
+
+    box-shadow:
+    0 10px 35px rgba(255,50,160,.3);
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.03);
+
+    box-shadow:
+    0 15px 45px rgba(255,50,160,.5);
+
+}
+
+
+/* =========================================================
+   SECTION 1
+========================================================= */
+
+#hero{
+
+    min-height:100vh;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero-sub{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    color:#d8bfd2;
+
+}
+
+.cursor{
+
+    animation:
+    blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
+}
+
+
+/* =========================================================
+   SECRET LOCK
+========================================================= */
+
+.lock-box{
+
+    max-width:500px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 80px rgba(0,0,0,.4);
+
+}
+
+.lock-icon{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:15px;
+
+    background:
+    rgba(255,255,255,.1);
+
+    color:white;
+
+    text-align:center;
+
+    font-size:16px;
+
+}
+
+input::placeholder{
+
+    color:#bbaab9;
+
+}
+
+#error{
+
+    color:#ff719c;
+
+    margin-top:15px;
+
+}
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+.time-box{
+
+    width:110px;
+
+    padding:20px 10px;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.07);
+
+    border:1px solid
+    rgba(255,255,255,.1);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.time-box strong{
+
+    display:block;
+
+    font-size:35px;
+
+    color:#ff8acb;
+
+}
+
+.time-box span{
+
+    font-size:12px;
+
+    color:#bdaabd;
+
+}
+
+
+/* =========================================================
+   MEMORY GALLERY
+========================================================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.memory{
+
+    height:360px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    cursor:pointer;
+
+    background:#170d1d;
+
+    border:1px solid
+    rgba(255,255,255,.1);
+
+    transition:.4s;
+
+}
+
+.memory:hover{
+
+    transform:
+    translateY(-10px)
+    rotate(1deg);
+
+}
+
+.memory img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.memory:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.memory-caption{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    padding:25px 15px;
+
+    background:
+    linear-gradient(
+    transparent,
+    rgba(0,0,0,.9)
+    );
+
+    text-align:left;
+
+}
+
+.memory-caption h3{
+
+    margin-bottom:5px;
+
+}
+
+.memory-caption p{
+
+    font-size:13px;
+
+}
+
+
+/* =========================================================
+   LOVE REASONS
+========================================================= */
+
+.reasons{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.reason{
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    background:
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.08),
+    rgba(255,255,255,.025)
+    );
+
+    border:1px solid
+    rgba(255,255,255,.1);
+
+    transition:.4s;
+
+}
+
+.reason:hover{
+
+    transform:
+    translateY(-10px);
+
+    border-color:#ff6bb9;
+
+}
+
+.reason-icon{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* =========================================================
+   STAR MESSAGES
+========================================================= */
+
+.star-field{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    max-width:800px;
+
+    margin:50px auto;
+
+}
+
+.star{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.star:hover{
+
+    transform:
+    scale(1.5)
+    rotate(20deg);
+
+    filter:
+    drop-shadow(0 0 15px #fff);
+
+}
+
+#starMessage{
+
+    min-height:80px;
+
+    font-size:20px;
+
+    color:#ffb9df;
+
+    margin-top:20px;
+
+}
+
+
+/* =========================================================
+   CHAPTER 4 - LOVE LETTER
+========================================================= */
+
+.envelope{
+
+    width:320px;
+    height:220px;
+
+    margin:80px auto 250px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    perspective:1000px;
+
+}
+
+
+/* =========================================================
+   ENVELOPE BODY
+========================================================= */
+
+.envelope-body{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff6eae,
+        #c73582
+    );
+
+    border-radius:10px;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.5);
+
+    z-index:3;
+
+}
+
+
+/* =========================================================
+   ENVELOPE SIDE FOLDS
+========================================================= */
+
+.envelope-body::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:0;
+    height:0;
+
+    border-left:
+    160px solid rgba(255,255,255,.12);
+
+    border-top:
+    110px solid transparent;
+
+}
+
+.envelope-body::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+    bottom:0;
+
+    width:0;
+    height:0;
+
+    border-right:
+    160px solid rgba(255,255,255,.12);
+
+    border-top:
+    110px solid transparent;
+
+}
+
+
+/* =========================================================
+   LETTER
+========================================================= */
+
+.letter{
+
+    position:absolute;
+
+    width:90%;
+
+    height:190px;
+
+    left:5%;
+
+    bottom:10px;
+
+    padding:25px 20px;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,.98),
+        rgba(255,248,240,.98)
+    );
+
+    color:#000;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.4);
+
+    overflow:auto;
+
+    box-sizing:border-box;
+
+    /*
+       IMPORTANT
+
+       Letter starts INSIDE the envelope.
+    */
+
+    transform:
+    translateY(0);
+
+    opacity:1;
+
+    z-index:2;
+
+    transition:
+    transform 1s ease,
+    z-index 0s 1s;
+
+}
+
+
+/* Letter text */
+
+.letter h3{
+
+    text-align:center;
+
+    color:#d6336c;
+
+    margin-bottom:15px;
+
+}
+
+.letter p{
+
+    color:#4b2631;
+
+    line-height:1.7;
+
+}
+
+
+/* =========================================================
+   ENVELOPE FLAP
+========================================================= */
+
+.flap{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:0;
+
+    border-left:
+    160px solid transparent;
+
+    border-right:
+    160px solid transparent;
+
+    border-top:
+    120px solid #ff8ec1;
+
+    transform-origin:
+    top center;
+
+    transition:
+    transform 1s ease;
+
+    z-index:4;
+
+}
+
+
+/* =========================================================
+   CLOSED ENVELOPE
+========================================================= */
+
+/*
+   Letter is hidden behind the
+   envelope body when closed.
+*/
+
+.envelope:not(.open) .letter{
+
+    transform:
+    translateY(0);
+
+    z-index:2;
+
+}
+
+
+/* =========================================================
+   OPEN ENVELOPE
+========================================================= */
+
+.envelope.open .letter{
+
+    /*
+       Letter comes OUT of envelope
+    */
+
+    transform:
+    translateY(-260px);
+
+    z-index:5;
+
+}
+
+
+/*
+   Flap opens backwards
+*/
+
+.envelope.open .flap{
+
+    transform:
+    rotateX(180deg);
+
+    z-index:1;
+
+}
+
+
+/* =========================================================
+   LETTER HINT
+========================================================= */
+
+.letter-hint{
+
+    margin-top:-200px;
+
+    color:#ff9bd5;
+
+    font-size:15px;
+
+    animation:
+    pulseLetter 2s infinite;
+
+}
+
+@keyframes pulseLetter{
+
+    0%,100%{
+        opacity:.5;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+}
+
+
+/* =========================================================
+   PROMISE CARDS
+========================================================= */
+
+.promise-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.promise{
+
+    width:220px;
+
+    min-height:170px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:
+    rgba(255,255,255,.06);
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+    transition:.4s;
+
+}
+
+.promise:hover{
+
+    transform:
+    rotate(-3deg)
+    scale(1.05);
+
+    background:
+    rgba(255,79,169,.1);
+
+}
+
+
+/* =========================================================
+   QUIZ
+========================================================= */
+
+.quiz-box{
+
+    max-width:650px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.06);
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+}
+
+.quiz-question{
+
+    font-size:24px;
+
+    margin-bottom:25px;
+
+}
+
+.answers{
+
+    display:grid;
+
+    gap:12px;
+
+}
+
+.answer{
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:1px solid
+    rgba(255,255,255,.15);
+
+    background:
+    rgba(255,255,255,.05);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.answer:hover{
+
+    background:
+    rgba(255,80,170,.2);
+
+}
+
+#quizResult{
+
+    margin-top:25px;
+
+    color:#ff9bd5;
+
+}
+
+
+/* =========================================================
+   GIFT
+========================================================= */
+
+.gift{
+
+    width:180px;
+
+    height:150px;
+
+    margin:50px auto;
+
+    position:relative;
+
+    cursor:pointer;
+
+    animation:
+    giftFloat 2s infinite ease-in-out;
+
+}
+
+@keyframes giftFloat{
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+}
+
+.gift-box{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:110px;
+
+    background:
+    linear-gradient(135deg,#ff4f9f,#a92dff);
+
+    border-radius:8px;
+
+}
+
+.gift-lid{
+
+    position:absolute;
+
+    top:25px;
+
+    left:-10px;
+
+    width:200px;
+
+    height:35px;
+
+    background:#ff79b8;
+
+    border-radius:8px;
+
+    z-index:2;
+
+}
+
+.ribbon{
+
+    position:absolute;
+
+    left:75px;
+
+    width:30px;
+
+    height:100%;
+
+    background:#ffd2ea;
+
+    z-index:3;
+
+}
+
+.gift.open .gift-lid{
+
+    transform:
+    translateY(-80px)
+    rotate(-10deg);
+
+    transition:.8s;
+
+}
+
+.gift-message{
+
+    display:none;
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+.gift-message.show{
+
+    display:block;
+
+    animation:
+    fadeIn 1s;
+
+}
+
+
+/* =========================================================
+   CAKE
+========================================================= */
+
+.cake{
+
+    position:relative;
+
+    width:260px;
+
+    height:200px;
+
+    margin:50px auto;
+
+}
+
+.cake-bottom{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:260px;
+
+    height:100px;
+
+    border-radius:
+    20px 20px 30px 30px;
+
+    background:
+    linear-gradient(#ff76b6,#b92c75);
+
+}
+
+.cake-top{
+
+    position:absolute;
+
+    bottom:85px;
+
+    left:20px;
+
+    width:220px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#ffd5e9;
+
+}
+
+.candle{
+
+    position:absolute;
+
+    bottom:140px;
+
+    left:120px;
+
+    width:20px;
+
+    height:65px;
+
+    background:
+    repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 8px,
+    #ff65ad 8px,
+    #ff65ad 16px
+    );
+
+}
+
+.flame{
+
+    position:absolute;
+
+    top:-35px;
+
+    left:3px;
+
+    font-size:30px;
+
+    animation:
+    flame 0.6s infinite alternate;
+
+}
+
+@keyframes flame{
+
+    to{
+        transform:
+        scale(1.2)
+        translateY(-3px);
+    }
+
+}
+
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+#final{
+
+    background:
+    radial-gradient(
+    circle,
+    #48154e,
+    #08020d 65%
+    );
+
+}
+
+.final-heart{
+
+    font-size:
+    clamp(70px,15vw,180px);
+
+    animation:
+    heartbeat 1.3s infinite;
+
+}
+
+.final-name{
+
+    font-size:
+    clamp(40px,8vw,90px);
+
+    background:
+    linear-gradient(
+    90deg,
+    #ff6bb7,
+    #fff,
+    #b86cff
+    );
+
+    background-clip: text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+.final-message{
+
+    max-width:700px;
+
+    margin:25px auto;
+
+    font-size:20px;
+
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,.85);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9990;
+
+    padding:20px;
+
+}
+
+.modal.show{
+
+    display:flex;
+
+}
+
+.modal-content{
+
+    max-width:600px;
+
+    width:100%;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:
+    #17091d;
+
+    border:
+    1px solid #ff62b3;
+
+    text-align:center;
+
+}
+
+.close{
+
+    float:right;
+
+    cursor:pointer;
+
+    font-size:25px;
+
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+.confetti{
+
+    position:fixed;
+
+    width:10px;
+
+    height:15px;
+
+    top:-20px;
+
+    z-index:10000;
+
+    animation:
+    confettiFall 4s linear forwards;
+
+}
+
+@keyframes confettiFall{
+
+    to{
+
+        transform:
+        translateY(110vh)
+        rotate(720deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   FIREWORK
+========================================================= */
+
+.firework{
+
+    position:fixed;
+
+    width:5px;
+
+    height:5px;
+
+    border-radius:50%;
+
+    z-index:10000;
+
+    animation:
+    explode 1s ease-out forwards;
+
+}
+
+@keyframes explode{
+
+    0%{
+
+        box-shadow:
+        0 0 0 0 white;
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 -100px 0 2px #ff6bb7,
+        70px -70px 0 2px #fff,
+        100px 0 0 2px #a66cff,
+        70px 70px 0 2px #ffcc70,
+        0 100px 0 2px #ff6bb7,
+        -70px 70px 0 2px #fff,
+        -100px 0 0 2px #a66cff,
+        -70px -70px 0 2px #ffcc70;
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.scroll{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:
+    translateX(-50%);
+
+    color:#d5b5ce;
+
+    font-size:13px;
+
+    animation:
+    bounce 1.5s infinite;
+
+}
+
+@keyframes bounce{
+
+    50%{
+        transform:
+        translate(-50%,10px);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:800px){
+
+    .gallery{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+    .reasons{
+
+        grid-template-columns:
+        1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:550px){
+
+    section{
+
+        padding:
+        60px 15px;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .reasons{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .memory{
+
+        height:430px;
+
+    }
+
+    .lock-box{
+
+        padding:25px;
+
+    }
+
+    .time-box{
+
+        width:75px;
+
+    }
+
+    .time-box strong{
+
+        font-size:25px;
+
+    }
+
+}
+
+/* =========================================================
+   MOBILE PERFORMANCE OPTIMIZATION
+========================================================= */
+
+@media(max-width:550px){
+
+    /* Make background rendering lighter */
+    body{
+        background:
+        linear-gradient(
+            180deg,
+            #180a32 0%,
+            #090312 50%,
+            #020107 100%
+        );
+    }
+
+    /* Reduce expensive blur effects */
+    .lock-box,
+    .time-box,
+    .reason,
+    .promise,
+    .quiz-box{
+        backdrop-filter:none;
+        -webkit-backdrop-filter:none;
+    }
+
+    /* Reduce large shadows on mobile */
+    .lock-box{
+        box-shadow:
+        0 10px 35px rgba(0,0,0,.3);
+    }
+
+    .envelope-body{
+        box-shadow:
+        0 12px 30px rgba(0,0,0,.4);
+    }
+
+    .letter{
+        box-shadow:
+        0 10px 25px rgba(0,0,0,.3);
+    }
+
+    /* Reduce particle amount visually */
+    .particle{
+        width:2px;
+        height:2px;
+        opacity:.45;
+    }
+
+    /* Make floating hearts lighter */
+    .heart{
+        opacity:.55;
+        font-size:16px;
+    }
+
+    /* Reduce hover-related rendering */
+    .memory:hover{
+        transform:none;
+    }
+
+    .memory:hover img{
+        transform:none;
+    }
+
+    .reason:hover{
+        transform:none;
+    }
+
+    .promise:hover{
+        transform:none;
+    }
+
+    .star:hover{
+        transform:scale(1.2);
+    }
+
+}
+
+
+/* =========================================================
+   HIDDEN SECTIONS
+========================================================= */
+
+.hidden-section{
+
+    display:none !important;
+
+}
+
+.reveal-section{
+
+    display:flex !important;
+
+    animation:
+    revealSection 1s ease;
+
+}
+
+@keyframes revealSection{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     LOADER
+===================================================== -->
+
+<div id="loader">
+
+    <div class="loader-heart">❤️</div>
+
+    <div class="loader-text">
+        PREPARING SOMETHING SPECIAL...
+    </div>
+
+</div>
+
+
+<!-- PARTICLES -->
+
+<div id="particles"></div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="hero">
+
+<div class="container hero-content">
+
+    <div class="small-title">
+        A little surprise for you
+    </div>
+
+    <h1 class="glow">
+
+        Hey,
+        <span id="girlName">
+            Nisha
+        </span>
+        ❤️
+
+    </h1>
+
+    <p class="hero-sub">
+
+        I could have simply said
+        <strong>Happy Birthday</strong>...
+
+        <br>
+
+        But you're not just someone
+        who deserves a birthday wish.
+
+        <br>
+
+        You're someone who deserves
+        an entire little universe.😉
+
+    </p>
+
+    <button
+    class="btn"
+    onclick="scrollToSection('secret')">
+
+        ✨ Enter Your Surprise
+
+    </button>
+
+    <div class="scroll">
+
+        ↓ there's something waiting for you ↓
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SECRET
+===================================================== -->
+
+<section
+id="secret"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="lock-box">
+
+        <div class="lock-icon">
+            🔐
+        </div>
+
+        <div class="small-title">
+            PRIVATE MESSAGE
+        </div>
+
+        <h2>
+            Only You Can Open This
+        </h2>
+
+        <p>
+
+            There is a secret password
+            hidden somewhere between
+            us.
+
+            <br><br>
+
+            Hint:
+            <em>
+                Think about the first thing
+                that made us feel something different.
+            </em>
+
+        </p>
+
+        <input
+        type="text"
+        id="secretInput"
+        placeholder="Enter the secret word...">
+
+        <button
+        class="btn"
+        onclick="unlock()">
+
+            🔓 Unlock My Heart
+
+        </button>
+
+        <div id="error"></div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     COUNTDOWN
+===================================================== -->
+
+<section
+id="birthday"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        The Day You Were Born
+    </div>
+
+    <h2 class="glow">
+        A Very Special Day ❤️
+    </h2>
+
+    <p>
+
+        The world became a little more beautiful
+        on the day you were born.
+
+    </p>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <strong id="days">00</strong>
+            <span>DAYS</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>HOURS</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>MINUTES</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>SECONDS</span>
+        </div>
+
+    </div>
+
+    <button
+    class="btn"
+    onclick="scrollToSection('story')">
+
+        Continue Our Little Story →
+
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STORY
+===================================================== -->
+
+<section
+id="story"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        Chapter One
+    </div>
+
+    <h2>
+        How It All Became Special 😘
+    </h2>
+
+    <p style="max-width:750px;margin:auto;">
+
+        Some people enter our lives quietly.
+
+        <br><br>
+
+        And then, somehow,
+        without even realizing it,
+        they become part of our everyday thoughts.😚
+
+        <br><br>
+
+        You became one of those people for me.💓
+
+        <br><br>
+
+        Somewhere between our conversations,
+        our silly moments,
+        our smiles,
+        our arguments,
+        our memories...
+
+        <br>
+
+        you became
+        <strong>my favorite person.🥺🤌</strong>
+
+    </p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MEMORIES
+===================================================== -->
+
+<section
+id="memories"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        Chapter Two
+    </div>
+
+    <h2 class="glow">
+        Our Little Universe 📸
+    </h2>
+
+
+    <div class="gallery">
+
+        <div
+        class="memory"
+        onclick="openMemory(
+        'The Beginning ❤️',
+        'This picture reminds me of the moment when something beautiful started.'
+        )">
+
+            <img src="IMG_20260610_131232.jpg">
+
+            <div class="memory-caption">
+
+                <h3>
+                    The Beginning ❤️
+                </h3>
+
+                <p>
+                    Where our story started.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+        class="memory"
+        onclick="openMemory(
+        'That Smile 🥹',
+        'Your smile has a way of making even ordinary days feel special.'
+        )">
+
+            <img src="IMG-20260819-WA0052~2.jpg">
+
+            <div class="memory-caption">
+
+                <h3>
+                    That Smile 🥹
+                </h3>
+
+                <p>
+                    My favorite view.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+        class="memory"
+        onclick="openMemory(
+        'Our Random Moments 😂',
+        'The best memories are sometimes the completely random ones.'
+        )">
+
+            <img src="IMG_20260813_170713.jpg">
+
+            <div class="memory-caption">
+
+                <h3>
+                    Random Moments 😂
+                </h3>
+
+                <p>
+                    The moments we never planned.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+        class="memory"
+        onclick="openMemory(
+        'My Favorite Person 💕',
+        'Out of everyone in the world, somehow I got lucky enough to have you.'
+        )">
+
+            <img src="IMG_20260905_162357.jpg">
+
+            <div class="memory-caption">
+
+                <h3>
+                    My Favorite Person 💕
+                </h3>
+
+                <p>
+                    You.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+        class="memory"
+        onclick="openMemory(
+        'The Laughs 🤭',
+        'Some of my favorite memories are simply us laughing at something stupid.'
+        )">
+
+            <img src="IMG_20260828_114822.jpg">
+
+            <div class="memory-caption">
+
+                <h3>
+                    The Laughs 🤭
+                </h3>
+
+                <p>
+                    Happiness looks like this.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+        class="memory"
+        onclick="openMemory(
+        'Still My Favorite ❤️',
+        'No matter how many pictures we take, this feeling remains my favorite.'
+        )">
+
+            <img src="IMG-20260525-WA0005.jpg">
+
+            <div class="memory-caption">
+
+                <h3>
+                    Still My Favorite ❤️
+                </h3>
+
+                <p>
+                    And always will be.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     REASONS
+===================================================== -->
+
+<section
+id="reasons"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        Chapter Three
+    </div>
+
+    <h2>
+        Reasons I Love You
+    </h2>
+
+    <div class="reasons">
+
+        <div class="reason">
+
+            <div class="reason-icon">
+                😊
+            </div>
+
+            <h3>
+                Your Smile
+            </h3>
+
+            <p>
+                It can change my entire mood
+                without you even trying.🫠
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <div class="reason-icon">
+                🫶
+            </div>
+
+            <h3>
+                Your Heart
+            </h3>
+
+            <p>
+                The way you show your egoless character
+                is something I genuinely admire.🤗
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <div class="reason-icon">
+                😂
+            </div>
+
+            <h3>
+                Your Craziness
+            </h3>
+
+            <p>
+                Life is definitely more fun
+                when you're being yourself.😉
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <div class="reason-icon">
+                🌷
+            </div>
+
+            <h3>
+                Your Kindness
+            </h3>
+
+            <p>
+                You make ordinary moments
+                feel warmer.😍
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <div class="reason-icon">
+                🌙
+            </div>
+
+            <h3>
+                Your Presence
+            </h3>
+
+            <p>
+                Sometimes I don't need anything.
+                Just knowing you're there is enough.🤧
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <div class="reason-icon">
+                ❤️
+            </div>
+
+            <h3>
+                Simply You
+            </h3>
+
+            <p>
+                I don't need a reason for every reason.
+                I just love you.💖🥺
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STARS
+===================================================== -->
+
+<section
+id="stars"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        A Tiny Galaxy For You
+    </div>
+
+    <h2>
+        Touch A Star ✨
+    </h2>
+
+    <p>
+        Each star is hiding a little message.
+    </p>
+
+    <div class="star-field">
+
+        <div class="star"
+        onclick="starMessage(0)">⭐</div>
+
+        <div class="star"
+        onclick="starMessage(1)">✨</div>
+
+        <div class="star"
+        onclick="starMessage(2)">🌟</div>
+
+        <div class="star"
+        onclick="starMessage(3)">⭐</div>
+
+        <div class="star"
+        onclick="starMessage(4)">✨</div>
+
+        <div class="star"
+        onclick="starMessage(5)">🌟</div>
+
+        <div class="star"
+        onclick="starMessage(6)">⭐</div>
+
+    </div>
+
+    <div id="starMessage">
+        
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LOVE LETTER
+===================================================== -->
+
+<section
+id="letter"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        Chapter Four
+    </div>
+
+    <h2>
+        A Letter I Couldn't Say Out Loud 💌
+    </h2>
+
+    <p>
+        Click the envelope.
+    </p>
+
+
+    <div
+    class="envelope"
+    id="envelope"
+    onclick="openEnvelope()">
+
+        <div class="envelope-body"></div>
+
+        <div class="letter">
+
+            <h3>
+                My Love💞,
+            </h3>
+
+            <br>
+
+            <p>
+
+                I don't know if words will ever be enough
+                to explain what you mean to me.
+
+                <br><br>
+
+                But today, I want to try.
+
+                <br><br>
+
+                Thank you for every smile,
+                every conversation,
+                every little moment,
+                every memory,
+                and even every silly argument.
+
+                <br><br>
+
+                You have become a beautiful part
+                of my life.
+
+                <br><br>
+
+                On your birthday,
+                I don't just wish you happiness.
+
+                I wish you the kind of happiness
+                that stays.
+
+                <br><br>
+
+                I hope you achieve everything
+                you dream about.
+
+                And whenever life becomes difficult,
+                I hope you remember that
+                you are stronger than you think.
+
+                And always remember I'm with you, I 
+                wont't leave you in any situation.
+
+                <br><br>
+
+                Happy Birthday,
+                my favorite person.
+
+                ❤️
+
+            </p>
+
+        </div>
+
+        <div class="flap"></div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROMISES
+===================================================== -->
+
+<section
+id="promises"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        Chapter Five
+    </div>
+
+    <h2 class="glow">
+        My Little Promises To You 🤞
+    </h2>
+
+    <div class="promise-container">
+
+        <div class="promise">
+
+            <h3>
+                🌙
+            </h3>
+
+            <br>
+
+            <p>
+                I'll always try to listen,
+                even when you don't know
+                how to explain what you're feeling.
+            </p>
+
+        </div>
+
+
+        <div class="promise">
+
+            <h3>
+                🫶
+            </h3>
+
+            <br>
+
+            <p>
+                I'll celebrate your small wins
+                just as much as your big ones.
+            </p>
+
+        </div>
+
+
+        <div class="promise">
+
+            <h3>
+                😂
+            </h3>
+
+            <br>
+
+            <p>
+                I'll keep finding reasons
+                to make you laugh.
+            </p>
+
+        </div>
+
+
+        <div class="promise">
+
+            <h3>
+                🛡️
+            </h3>
+
+            <br>
+
+            <p>
+                I'll respect your dreams,
+                your space,
+                and the person you are.
+            </p>
+
+        </div>
+
+
+        <div class="promise">
+
+            <h3>
+                🌎
+            </h3>
+
+            <br>
+
+            <p>
+                I'll keep creating memories
+                worth remembering.
+            </p>
+
+        </div>
+
+
+        <div class="promise">
+
+            <h3>
+                ❤️
+            </h3>
+
+            <br>
+
+            <p>
+                And I'll never stop being grateful
+                that our paths crossed.
+            </p>
+
+        </div>
+
+
+        <div class="promise">
+
+            <h3>
+                😁
+            </h3>
+
+            <br>
+
+            <p>
+                And I'll always be your unpaid bodyguard
+                forever and ever, till my last breath
+                You are my one and only.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QUIZ
+===================================================== -->
+
+<section
+id="quiz"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        One Tiny Game
+    </div>
+
+    <h2>
+        How Well Do You Know Me? 😅
+    </h2>
+
+    <div class="quiz-box">
+
+        <div
+        class="quiz-question"
+        id="question">
+
+            Loading question...
+
+        </div>
+
+        <div
+        class="answers"
+        id="answers">
+        </div>
+
+        <div id="quizResult"></div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     GIFT
+===================================================== -->
+
+<section
+id="gift"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        One Last Thing...
+    </div>
+
+    <h2>
+        I Have A Gift For You 🎁
+    </h2>
+
+    <p>
+        It's not something I bought.
+    </p>
+
+    <div
+    class="gift"
+    id="giftBox"
+    onclick="openGift()">
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-box">
+
+            <div class="ribbon"></div>
+
+        </div>
+
+    </div>
+
+    <div
+    class="gift-message"
+    id="giftMessage">
+
+        <h2 class="glow">
+            YOU ARE MY FAVORITE GIFT ❤️
+        </h2>
+
+        <p>
+
+            The real gift isn't inside the box.
+
+            <br><br>
+
+            It's every memory,
+            every laugh,
+            every conversation,
+            and every moment
+            that brought us here.
+
+        </p>
+
+        <button
+        class="btn"
+        onclick="scrollToSection('cake')">
+
+            🎂 There's One More Surprise
+
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CAKE
+===================================================== -->
+
+<section
+id="cake"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="small-title">
+        Make A Wish
+    </div>
+
+    <h2>
+        Your Birthday Cake 🎂
+    </h2>
+
+    <p>
+        Click the candle to make your wish.
+    </p>
+
+    <div
+    class="cake"
+    onclick="blowCandle()">
+
+        <div class="cake-bottom"></div>
+
+        <div class="cake-top"></div>
+
+        <div class="candle">
+
+            <div
+            class="flame"
+            id="flame">
+
+                🔥
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="wishText">
+
+        Make a wish... ❤️
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section
+id="final"
+class="hidden-section">
+
+<div class="container">
+
+    <div class="final-heart">
+        ❤️
+    </div>
+
+    <div class="small-title">
+        And Finally...
+    </div>
+
+    <h1 class="final-name">
+        Happy Birthday,
+        My Love
+    </h1>
+
+    <p class="final-message">
+
+        I hope this year brings you
+        everything your heart has been waiting for.
+
+        <br><br>
+
+        More laughter.
+
+        More adventures.
+
+        More dreams coming true.
+
+        More beautiful memories.
+
+        <br><br>
+
+        And hopefully...
+
+        <strong>
+            many, many more moments together.
+        </strong>
+
+        ❤️
+
+        <br><br>
+
+        You are special.
+
+        You are loved.
+
+        You are appreciated.
+
+        And today,
+        the entire little universe I created here
+        is just for you.
+
+        <br><br>
+
+        <strong>
+            Happy Birthday, Nisha(My Love). 💞
+        </strong>
+
+    </p>
+
+    <button
+    class="btn"
+    onclick="finalSurprise()">
+
+        ✨ One Last Surprise ✨
+
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MEMORY MODAL
+===================================================== -->
+
+<div
+class="modal"
+id="memoryModal">
+
+    <div class="modal-content">
+
+        <span
+        class="close"
+        onclick="closeMemory()">
+            ×
+        </span>
+
+        <h2 id="modalTitle">
+        </h2>
+
+        <p id="modalText">
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   CHANGE THESE
+========================================================= */
+
+const GIRL_NAME = "Nisha";
+
+/*
+   IMPORTANT:
+   Change this to your girlfriend's birthday.
+
+   Format:
+   YYYY-MM-DD
+*/
+
+const BIRTHDAY = "2026-11-02";
+
+/*
+   Change this to your secret password.
+
+   Example:
+   "firstsmile"
+*/
+
+const SECRET_PASSWORD = "love";
+
+
+/* =========================================================
+   LOADER
+========================================================= */
+
+window.addEventListener("load",function(){
+
+    setTimeout(function(){
+
+        document.getElementById("loader").style.opacity="0";
+
+        setTimeout(function(){
+
+            document.getElementById("loader").style.display="none";
+
+        },1000);
+
+    },1500);
+
+});
+
+
+/* =========================================================
+   SET NAME
+========================================================= */
+
+document.getElementById("girlName").innerText =
+GIRL_NAME;
+
+
+/* =========================================================
+   PARTICLES
+========================================================= */
+
+const particles =
+document.getElementById("particles");
+
+for(let i=0;i<35;i++){
+
+    const p =
+    document.createElement("div");
+
+    p.className="particle";
+
+    p.style.left =
+    Math.random()*100+"%";
+
+    p.style.animationDuration =
+    (5+Math.random()*10)+"s";
+
+    p.style.animationDelay =
+    Math.random()*10+"s";
+
+    particles.appendChild(p);
+
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.className="heart";
+
+    const hearts=[
+        "❤️",
+        "💖",
+        "💕",
+        "💗",
+        "💓",
+        "💘"
+    ];
+
+    heart.innerText =
+    hearts[
+    Math.floor(Math.random()*hearts.length)
+    ];
+
+    heart.style.left =
+    Math.random()*100+"%";
+
+    heart.style.animationDuration =
+    (5+Math.random()*5)+"s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(
+        ()=>heart.remove(),
+        10000
+    );
+
+}
+
+setInterval(createHeart,900);
+
+
+/* =========================================================
+   SCROLL
+========================================================= */
+
+function scrollToSection(id){
+
+    const section =
+    document.getElementById(id);
+
+    section.classList.add("reveal-section");
+
+    section.scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+/* =========================================================
+   UNLOCK
+========================================================= */
+
+function unlock(){
+
+    const input =
+    document.getElementById("secretInput")
+    .value
+    .trim()
+    .toLowerCase();
+
+    if(input === SECRET_PASSWORD){
+
+        document.getElementById("error")
+        .innerText =
+        "Unlocked ❤️";
+
+        revealAll();
+
+        setTimeout(function(){
+
+            scrollToSection("birthday");
+
+        },500);
+
+        launchConfetti();
+
+        startMusic();
+
+    }else{
+
+        document.getElementById("error")
+        .innerText =
+        "Hmm... that's not it 😌 Try again ❤️";
+
+    }
+
+}
+
+
+/* =========================================================
+   REVEAL ALL
+========================================================= */
+
+function revealAll(){
+
+    const sections=[
+        "birthday",
+        "story",
+        "memories",
+        "reasons",
+        "stars",
+        "letter",
+        "promises",
+        "quiz",
+        "gift",
+        "cake",
+        "final"
+    ];
+
+    sections.forEach(id=>{
+
+        document
+        .getElementById(id)
+        .classList.add("reveal-section");
+
+    });
+
+}
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+function updateCountdown(){
+
+    const target =
+    new Date(BIRTHDAY+"T00:00:00");
+
+    const now =
+    new Date();
+
+    let difference =
+    target-now;
+
+    if(difference<0){
+
+        difference=0;
+
+    }
+
+    const days =
+    Math.floor(
+        difference/
+        (1000*60*60*24)
+    );
+
+    const hours =
+    Math.floor(
+        (difference/
+        (1000*60*60))%24
+    );
+
+    const minutes =
+    Math.floor(
+        (difference/
+        (1000*60))%60
+    );
+
+    const seconds =
+    Math.floor(
+        (difference/1000)%60
+    );
+
+
+    document.getElementById("days")
+    .innerText=
+    String(days).padStart(2,"0");
+
+    document.getElementById("hours")
+    .innerText=
+    String(hours).padStart(2,"0");
+
+    document.getElementById("minutes")
+    .innerText=
+    String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds")
+    .innerText=
+    String(seconds).padStart(2,"0");
+
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+
+/* =========================================================
+   MEMORY MODAL
+========================================================= */
+
+function openMemory(title,text){
+
+    document.getElementById("modalTitle")
+    .innerText=title;
+
+    document.getElementById("modalText")
+    .innerText=text;
+
+    document.getElementById("memoryModal")
+    .classList.add("show");
+
+}
+
+function closeMemory(){
+
+    document.getElementById("memoryModal")
+    .classList.remove("show");
+
+}
+
+
+/* =========================================================
+   STAR MESSAGES
+========================================================= */
+
+const starMessages=[
+
+    "You make ordinary days feel extraordinary. ❤️",
+
+    "If I could save one feeling forever, it would be the feeling of being with you.",
+
+    "Your smile is one of my favorite things in this world.",
+
+    "No matter how busy life gets, I hope we always make time for each other.",
+
+    "You deserve every beautiful thing life has to offer.",
+
+    "Some people are chapters. You became part of my favorite story.",
+
+    "If this little galaxy were real, I would still choose you as my brightest star."
+
+];
+
+
+function starMessage(index){
+
+    document.getElementById("starMessage")
+    .innerText=
+    starMessages[index];
+
+}
+
+
+/* =========================================================
+   ENVELOPE
+========================================================= */
+
+function openEnvelope(){
+
+    document
+    .getElementById("envelope")
+    .classList.toggle("open");
+
+}
+
+
+/* =========================================================
+   QUIZ
+========================================================= */
+
+const questions=[
+
+{
+
+question:
+"What is my favorite thing about you?",
+
+answers:[
+"Your smile ❤️",
+"Your personality 🌷",
+"Your Character 😌",
+"All of the above 💕"
+],
+
+correct:3
+
+},
+
+{
+
+question:
+"What would I choose?",
+
+answers:[
+"A boring day alone",
+"One crazy adventure with you ❤️",
+"Sleeping all day",
+"Watching random videos"
+],
+
+correct:1
+
+},
+
+{
+
+question:
+"What is this website really saying?",
+
+answers:[
+"Happy Birthday",
+"You are important",
+"I love you",
+"All of the above ❤️"
+],
+
+correct:3
+
+}
+
+];
+
+
+let currentQuestion=0;
+
+
+function loadQuiz(){
+
+    const q=
+    questions[currentQuestion];
+
+    document.getElementById("question")
+    .innerText=q.question;
+
+    const answers=
+    document.getElementById("answers");
+
+    answers.innerHTML="";
+
+    q.answers.forEach(
+    (answer,index)=>{
+
+        const button=
+        document.createElement("button");
+
+        button.className="answer";
+
+        button.innerText=answer;
+
+        button.onclick=
+        function(){
+
+            checkAnswer(index);
+
+        };
+
+        answers.appendChild(button);
+
+    });
+
+}
+
+function checkAnswer(index){
+
+    const q=
+    questions[currentQuestion];
+
+    if(index===q.correct){
+
+        document.getElementById("quizResult")
+        .innerText=
+        "Correct! 😌❤️ You know me too well.";
+
+    }else{
+
+        document.getElementById("quizResult")
+        .innerText=
+        "Wrong 😂 But I'll forgive you because it's your birthday.";
+
+    }
+
+    currentQuestion++;
+
+    if(currentQuestion<
+    questions.length){
+
+        setTimeout(
+            loadQuiz,
+            1200
+        );
+
+    }else{
+
+        setTimeout(function(){
+
+            document.getElementById("question")
+            .innerText=
+            "Quiz Complete ❤️";
+
+            document.getElementById("answers")
+            .innerHTML=
+            "Okay... maybe the real answer is that I just really love you.";
+
+        },1200);
+
+    }
+
+}
+
+loadQuiz();
+
+
+/* =========================================================
+   GIFT
+========================================================= */
+
+function openGift(){
+
+    document
+    .getElementById("giftBox")
+    .classList.add("open");
+
+    setTimeout(function(){
+
+        document
+        .getElementById("giftMessage")
+        .classList.add("show");
+
+        launchConfetti();
+
+    },700);
+
+}
+
+
+/* =========================================================
+   CAKE
+========================================================= */
+
+function blowCandle(){
+
+    document.getElementById("flame")
+    .innerText="💨";
+
+    document.getElementById("wishText")
+    .innerHTML=
+    "Wish made! ✨<br><br>" +
+    "I hope the universe listens to this one. ❤️";
+
+    launchConfetti();
+
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+function launchConfetti(){
+
+    const symbols=[
+        "❤️",
+        "💕",
+        "✨",
+        "🎉",
+        "💖",
+        "🌸",
+        "⭐"
+    ];
+
+    for(let i=0;i<80;i++){
+
+        const c=
+        document.createElement("div");
+
+        c.className="confetti";
+
+        c.innerText=
+        symbols[
+        Math.floor(
+        Math.random()*symbols.length
+        )
+        ];
+
+        c.style.left=
+        Math.random()*100+"vw";
+
+        c.style.animationDuration=
+        (2+Math.random()*3)+"s";
+
+        c.style.fontSize=
+        (10+Math.random()*20)+"px";
+
+        document.body.appendChild(c);
+
+        setTimeout(
+            ()=>c.remove(),
+            5000
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   FIREWORKS
+========================================================= */
+
+function fireworks(){
+
+    for(let i=0;i<15;i++){
+
+        setTimeout(function(){
+
+            const f=
+            document.createElement("div");
+
+            f.className="firework";
+
+            f.style.left=
+            (10+Math.random()*80)+"vw";
+
+            f.style.top=
+            (10+Math.random()*60)+"vh";
+
+            document.body.appendChild(f);
+
+            setTimeout(
+                ()=>f.remove(),
+                1200
+            );
+
+        },i*250);
+
+    }
+
+}
+
+
+/* =========================================================
+   FINAL SURPRISE
+========================================================= */
+
+function finalSurprise(){
+
+    launchConfetti();
+
+    fireworks();
+
+    document.body.style.animation=
+    "none";
+
+    setTimeout(function(){
+
+        alert(
+        "❤️ HAPPY BIRTHDAY ❤️\n\n" +
+        "If you are reading this...\n" +
+        "just know that somewhere in this world,\n" +
+        "there is someone smiling because of you.\n\n" +
+        "I love you. 😘❤️"
+        );
+
+    },1500);
+
+}
+
+
+/* =========================================================
+   ESCAPE MODAL
+========================================================= */
+
+document.addEventListener(
+"keydown",
+function(event){
+
+    if(event.key==="Escape"){
+
+        closeMemory();
+
+    }
+
+});
+
+
+/* =========================================================
+   CLICK OUTSIDE MODAL
+========================================================= */
+
+document.getElementById("memoryModal")
+.addEventListener(
+"click",
+function(event){
+
+    if(event.target===this){
+
+        closeMemory();
+
+    }
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
